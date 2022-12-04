@@ -12,19 +12,25 @@
       src: url(carnokytype-zin-display-condensed-demo.otf);
     }
 
-    html {
-      overflow: auto;
-    }
-
     * {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    html {
+      position: relative;
+      min-height: 100vh;
+      min-width: 100vh;
+      margin: auto;
+      overflow-x: hidden;
+      scrollbar-color: #381e2d #040404;
+      scrollbar-width: thin;
+    }
+
     header {
       position: relative;
-      top: -10px;
-      left: -10px;
-      width: 110%;
+      left: 0px;
+      margin: auto;
+      width: 100%;
       height: 1080px;
       background-image: url("https://assets.xboxservices.com/assets/8f/f6/8ff6cc0d-8fa2-4c4e-873a-573044cc5e8f.jpg?n=BP-Xbox-Hero-1920x1080.jpg");
       background-size: cover;
@@ -34,16 +40,24 @@
     body {
       background-color: #040404;
       color: slategray;
+      margin: auto;
     }
 
     footer {
-      position: relative;
-      width: 100%;
+      position: absolute;
       height: 50px;
       text-align: center;
       color: slategray;
       background-color: #24131d;
       font-size: small;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer:hover {
+      color: #a85887;
+      background-color: #040404;
     }
 
     article {
@@ -51,9 +65,11 @@
       width: 50%;
     }
 
-    p.footer {
-      margin-top: 0px;
-      padding-top: 25px;
+    iframe {
+      display: block;
+      border-style: none;
+      width: 70%;
+      margin: auto;
     }
 
     h2 {
@@ -66,14 +82,23 @@
       font-family: WakandaForever, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    nav {
+      margin: auto;
+      background-color: #040404;
+      top: 0;
+      padding-bottom: 10vh;
+      justify-content: center;
+      height: max-content;
+    }
+
     ul {
-      padding-bottom: 1em;
+      padding-bottom: 1vh;
       text-align: center;
     }
 
     li {
       display: inline;
-      padding-right: 1em;
+      padding-right: 5vh;
     }
 
     a {
@@ -88,11 +113,132 @@
     a:hover {
       text-decoration-line: overline underline;
       color: darkgray;
+      text-decoration-color: #a85887;
     }
 
-    iframe {
+    span {
+      color: #a85887;
+      font-family: WakandaForever
+    }
+
+    .lupita {
+      position: relative;
       display: inline-block;
-      border: none;
+      border-bottom: 1px dotted gray;
+      color: #a85887;
+    }
+
+    .angela {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted gray;
+      color: #a85887;
+    }
+
+    .letitia {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted gray;
+      color: #a85887;
+    }
+
+    .danai {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted gray;
+      color: #a85887;
+    }
+
+    .lupita .tooltiptext {
+      visibility: hidden;
+      width: 200px;
+      height: 50px;
+      background-color: #24131d;
+      color: #a85887;
+      border-radius: 6px;
+      padding: 20px 0;
+      border-width: 2px;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      bottom: 200%;
+      left: 470px;
+      margin-left: -60px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .angela .tooltiptext1 {
+      visibility: hidden;
+      width: 200px;
+      height: 50px;
+      background-color: #24131d;
+      color: #a85887;
+      border-radius: 6px;
+      padding: 20px 0;
+      border-width: 2px;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      bottom: 200%;
+      left: 240px;
+      margin-left: 60px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .letitia .tooltiptext2 {
+      visibility: hidden;
+      width: 200px;
+      height: 50px;
+      background-color: #24131d;
+      color: #a85887;
+      border-radius: 6px;
+      padding: 20px 0;
+      border-width: 2px;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      bottom: 200%;
+      left: 120px;
+      margin-left: 60px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .danai .tooltiptext3 {
+      visibility: hidden;
+      width: 200px;
+      height: 50px;
+      background-color: #24131d;
+      color: #a85887;
+      border-radius: 6px;
+      padding: 20px 0;
+      border-width: 2px;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      bottom: 200%;
+      left: 20px;
+      margin-left: 60px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .lupita:hover .tooltiptext {
+      visibility: visible;
+    }
+
+    .angela:hover .tooltiptext1 {
+      visibility: visible;
+    }
+
+    .letitia:hover .tooltiptext2 {
+      visibility: visible;
+    }
+
+    .danai:hover .tooltiptext3 {
+      visibility: visible;
     }
   </style>
 </head>
@@ -107,20 +253,23 @@
   <article>
     <p>&nbsp;</p>
     <h3>Marvel Studios Black Panther: Wakanda Forever</h3>
-    <br>Queen Ramonda, Shuri, M’Baku, Okoye och deras specialstyrka med
-    kvinnliga krigare,<br>
-    gör allt för att skydda sin nation från angripande världsmakter efter Kung
-    T’Challas död. Wakandas invånare försöker gå vidare och tar hjälp av War
-    Dog Nakia och Everett Ross, <br>
-    för att hitta en ny väg för kungariket Wakanda. Vi får också möta Namor,
-    kungen av en dold undervattensnation.
+    <br>
+    <p>Queen Ramonda, Shuri, M’Baku, Okoye och deras specialstyrka med
+      kvinnliga krigare,<br>
+      gör allt för att skydda sin nation från angripande världsmakter efter Kung
+      T’Challas död. Wakandas invånare försöker gå vidare och tar hjälp av War
+      Dog Nakia och Everett Ross, <br>
+      för att hitta en ny väg för kungariket Wakanda. Vi får också möta Namor,
+      kungen av en dold undervattensnation.</p>
     <p>Regi: Ryan Coogler</p>
     <p>Filmmanuskript: Ryan Coogler & Joe Robert Cole</p>
     <p>Skådespelare:</p>
-    <p>
-      Lupita Nyong'o, Angela Bassett, Letitia Wright, Danai Gurira, Tenoch
-      Huerta, Martin Freeman
-    </p>
+    <p class="lupita">Lupita<span class="tooltiptext">Plays the role of Nakia</span></p>
+    Nyong'o,
+    <p class="angela">Angela<span class="tooltiptext1">Plays the role of Ramonda</span></p> Bassett,
+    <p class="letitia">Letitia<span class="tooltiptext2">Plays the role of Shuri</span></p> Wright,
+    <p class="danai">Danai<span class="tooltiptext3">Plays the role of Okoye</span></p> Gurira,<br>
+    Tenoch Huerta, Martin Freeman
     <p>Premiär: 9 nov 2022</p>
     <p>Originaltitel: Black Panther: Wakanda Forever</p>
     <p>Originalspråk: Engelska</p>
