@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
             height: 100%;
             box-sizing: border-box;
         }
+
         video {
             position: fixed;
             top: 0px;
@@ -22,9 +24,11 @@
             object-fit: contain;
             z-index: -1;
         }
+
         header {
             z-index: 12;
         }
+
         body {
             flex-direction: column;
             position: relative;
@@ -33,6 +37,7 @@
             min-height: 100vh;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         footer {
             font-weight: bolder;
             color: #a55f40;
@@ -48,15 +53,18 @@
             border-top-right-radius: 60px 60px;
             border-top: black 1px dotted;
         }
+
         footer:hover {
             color: #ff986b;
             background-color: rgba(0, 0, 0, 1.0);
         }
+
         div {
             padding: 0rem;
             background-color: transparent;
             border-radius: 20px;
         }
+
         a {
             font-size: larger;
             font-weight: bolder;
@@ -65,10 +73,12 @@
             padding: 0.5rem 1rem;
             display: block;
         }
+
         a:hover,
         .active {
             color: #ff986b;
         }
+
         .hero {
             padding: 1rem;
             background-color: rgba(0, 0, 0, 0.5);
@@ -76,24 +86,28 @@
             color: #ff986b;
             margin-bottom: 2rem;
         }
+
         .hero-black {
             padding: 1rem;
             background-color: rgba(0, 0, 0, 0.5);
             color: black;
             margin-bottom: 2rem;
         }
+
         .divleft {
             padding: 0rem;
             background-color: transparent;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
         }
+
         .divright {
             padding: 0rem;
             background-color: transparent;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
         }
+
         .imgage-border {
             padding: 0rem;
             background-color: transparent;
@@ -102,8 +116,13 @@
             border-style: inset;
             border-width: 4px;
         }
+        .style-color-hero{
+            color: #ff986b;
+            background-color: transparent;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header
@@ -129,9 +148,10 @@
     </div>
     <div class="container">
         <div class="row  hero-black">
+            <h3 class="display-6 fw-bold lh-1 mb-3 col-12 style-color-hero" >Kaffemaskiner</h3>
             <!-- 1ST ROW: MACHINES-->
             <div class="row mb-3 text-center">
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 themed-grid-col">.<div
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 themed-grid-col"><br><div
                         class="card border-0 shadow">
                         <img src="https://cdn.abicart.com/shop/images/194833266-origpic-bd25cb/4461/art61/h3266/gs3-1.jpg?max-width=500&max-height=500&quality=85&fmt=avif"
                             loading="lazy" class="card-img-top " alt="...">
@@ -603,4 +623,5 @@
         </div>
     </div>
 </body>
+
 </html>
