@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppgift 2: Dra ett kort</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="column cornerLeft">
+            <label class="" for="inputNumber">Enter a number between 1 - 52 for a Card</label>
+            <p></p>
+            <input class="inputCards"  id="inputNumber" placeholder="1-52" min="1" max="52" type="number">
+            <p></p>
+            <label class="" for="inputName">Card code:</label><br>
+            <input class="inputCards" id="inputName" placeholder="code" type="text">
+            <p></p>
+            <button id="buttonCards">Get</button>
+            <p></p>
+            <textarea placeholder="JSON..." id="cardsOutput" cols="40" rows="15"></textarea>
+            <p></p>
+        </div>
+         
+        
+        <div class="column cornerRight">
+            <img id="card-image" class="row" src="" alt="card-image">
+            <div id="result" class="row"></div>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; 2022 - Jonny Walter - Webmaster</span>
+    </footer>
+    <script src="cards.js"></script>
+</body>
+
+</html>

@@ -15,7 +15,7 @@ footer {
     font-weight: normal;
     font-size: x-small;
     color: white;
-    background-color: lightsteelblue;
+    background-color: rgb(101, 155, 226);
     font-size: small;
     position: fixed;
     left: 0;
@@ -45,6 +45,7 @@ footer {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background-color: rgb(166, 194, 245);
+ 
 }
 
 .row:after {
@@ -59,7 +60,8 @@ footer {
     column-span: all;
     float: left;
     padding: 1rem;
-    background-color: lightsteelblue;
+    background-color:  rgb(101, 155, 226);
+  
 }
 
 .cornerLeft {
@@ -88,7 +90,7 @@ ul li {
     list-style-type: none;
     font-size: 16px;
     transition: 0.2s;
-    border-color:rgb(166, 194, 245);
+    border-color: rgb(166, 194, 245);
     border-radius: 5px;
     border-style: solid;
     margin-bottom: 1rem;
@@ -128,7 +130,7 @@ ul li.checked::before {
     transform: rotate(45deg);
     height: 1.5rem;
     width: 0.5rem;
-   
+
 }
 
 /* Style the item number */
@@ -167,9 +169,20 @@ input {
     padding: 10px;
     float: inline-start;
 }
-
-/* Style the "Add" button */
-.addButton {
+.inputCards {
+    margin: 0;
+    border: 2px;
+    border-color: rgb(166, 194, 245);
+    border-radius: 5px;
+    border-style: solid;
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+    padding: 10px;
+    float: inline-start;
+}
+/* Style the "Get" button */
+button {
     padding: 10px;
     width: 20%;
     background-color: rgb(166, 194, 245);
@@ -182,15 +195,15 @@ input {
     transition: 0.3s;
     border-radius: 5px;
     border-style: solid;
-    border-color:rgb(140, 176, 243);
-    margin-left: 1rem;
+    border-color: rgb(140, 176, 243);
+    margin-left: 0rem;
+    left: 0;
 }
 
-.addButton:hover {
-   
+button:hover {
+
     background-color: rgb(140, 176, 243);
     color: white;
-    float: inline-end;
 
 }
 
@@ -200,4 +213,70 @@ span {
 
 span:hover {
     color: white;
+}
+
+/*div declared inside the .js file*/
+#outputJS {
+    color: rgb(72, 72, 149);
+    background-color: rgb(166, 194, 245);
+}
+
+a {
+    text-decoration-line: overline underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(101, 148, 236);
+    font-weight: bolder;
+    text-underline-offset: 8px;
+    padding: 1rem;
+    color: rgb(101, 148, 236);
+
+}
+
+a:hover {
+    text-decoration-line: overline underline;
+    text-decoration-style: wavy;
+    text-decoration-color: white;
+    font-weight: bolder;
+    transition: 0.2s;
+    text-underline-offset: 8px;
+    color: white;
+}
+
+a:visited {
+    text-decoration-line: overline underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(73, 128, 230);
+    font-weight: bolder;
+    transition: 0.2s;
+    text-underline-offset: 8px;
+    /* color:rgb(101, 148, 236); */
+    color: white;
+}
+
+textarea {
+    padding: 2rem;
+
+    color:rgb(79 82 157);
+    border-radius: 1rem;
+    text-align: left;
+    font-weight: bolder;
+    background-color: rgb(166, 194, 245);;
+}
+
+label {
+    padding-bottom: 1rem;
+}
+
+p {
+    color: rgb(72, 72, 149);
+    font-size: smaller;
+    font-style: normal;
+    font-weight: bolder;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+img {
+    width: 226px;
+    aspect-ratio: auto 226 / 314;
+    height: 314px;    
 }
